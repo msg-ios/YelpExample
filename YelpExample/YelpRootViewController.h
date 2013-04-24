@@ -1,5 +1,5 @@
 //
-//  main.m
+//  YelpRootViewController.h
 //  YelpExample
 //
 //  Created by Ramiro Guerrero & Marco Graciano on 4/24/13.
@@ -28,14 +28,8 @@
 //    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
-
 #import <UIKit/UIKit.h>
 
-#import "YelpAppDelegate.h"
+@interface YelpRootViewController : UIViewController
 
-int main(int argc, char *argv[])
-{
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([YelpAppDelegate class]));
-    }
-}
+@end

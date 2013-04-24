@@ -1,8 +1,9 @@
 //
-//  main.m
-//  YelpExample
+//  RMMasterSDK.m
+//  MasterShareSDK
 //
-//  Created by Ramiro Guerrero & Marco Graciano on 4/24/13.
+//  Created by Ramiro Guerrero & Marco Graciano on 18/04/13.
+//
 //    Copyright (c) 2013 Weston McBride
 //
 //    Permission is hereby granted, free of charge, to any
@@ -28,14 +29,26 @@
 //    SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 
+#import "RMMasterSDK.h"
 
-#import <UIKit/UIKit.h>
+@implementation RMMasterSDK
 
-#import "YelpAppDelegate.h"
-
-int main(int argc, char *argv[])
-{
-    @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([YelpAppDelegate class]));
-    }
++(RMTumblrSDK *) TumblrSDK{
+    return [RMTumblrSDK sharedClient];
 }
+
++(RMFoursquareSDK *) FoursquareSDK {
+    return [RMFoursquareSDK sharedClient];
+}
+
++(RMInstagramSDK *) InstagramSDK{
+    return [RMInstagramSDK sharedClient];
+    
+}
+
++(RMYelpSDK *) YelpSDK{
+    return [RMYelpSDK sharedClient];
+    
+}
+
+@end
